@@ -105,3 +105,28 @@ h1, h2, h3, h4, h5, h6{
 .efeito-1:hover:before{
     width: 100%;
 }
+
+.middle-content{
+    padding: 1em;
+    background: var(--nav-lightgrey);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.middle-content-title{
+    font-size: 1.2em;
+    color: var(--nav-purple);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.middle-content p{
+    color: var(--nav-lightpurple);
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+.middle-content span[class^=icon]{
+    font-size: 4em;
+    color: var(--nav-purple);
+}
