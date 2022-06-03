@@ -21,6 +21,13 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Oxygen', arial;
 }
 
+.clearfix::after{
+    content: ' ';
+    display: block;
+    clear: both;
+
+}
+
 .top-header{
     text-align: center;
 }
@@ -198,7 +205,19 @@ h1, h2, h3, h4, h5, h6{
     .top-nav ul{
         margin: 0;
         padding: 0;
-        
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: var(--nav-purple-title);
+        margin-top: 15px;
+        transition: all .2s ease;
+    }
+    .top-nav a:hover{
+        background: transparent;
+        font-weight: bold;
+        transition: all .7s ease;
     }
     .top-content{
         background: var(--nav-purple);
