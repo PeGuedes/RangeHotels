@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Oxygen', arial;
 }
 
-.clearfix::after{
+.clearfix::after, .row::after{
     content: ' ';
     display: block;
     clear: both;
@@ -201,6 +201,7 @@ h1, h2, h3, h4, h5, h6{
     .top-nav{
         background: transparent;
         float: right;
+        margin-top: 30px;
     }
     .top-nav ul{
         margin: 0;
@@ -217,7 +218,7 @@ h1, h2, h3, h4, h5, h6{
     .top-nav a:hover{
         background: transparent;
         font-weight: bold;
-        transition: all .7s ease;
+        transition: all .2s ease;
     }
     .top-content{
         background: var(--nav-purple);
@@ -225,5 +226,20 @@ h1, h2, h3, h4, h5, h6{
     }
     .top-content-title, .top-content-subtitle{
         color: var(--nav-white);
+    }
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+}
+
+@media screen and (min-width:62.5em){
+    .top-content{
+       /* background-color: #521a66;
+        background-image: url(../images/bg_topo_1198x670.jpg);*/
+        background: #521a66 url(../images/bg_topo_1198x670.jpg);
+        height: 15em;
+        padding-top: 15em;
     }
 }
